@@ -1,0 +1,14 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	width: 20rem;
+	height: 100vh;
+	margin: 0 auto;
+}
+#color-box {
+	width: 15rem;
+	height: 15rem;
+	margin: auto;
+	background-color: #3498db;
+	transition: all 0.3s ease;
+}
