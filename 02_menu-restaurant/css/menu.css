@@ -1,0 +1,33 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin-top: 5rem;
+}
+
+.menu-container {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.menu-item {
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.menu-item:hover {
+	transform: scale(1.1);
+}
+
+img {
+	width: 15rem;
+	height: 15rem;
+	border-radius: 1rem;
+	object-fit: cover;
+}
+
+#message {
+	margin-top: 3rem;
+	font-size: 1.5em;
+	color: #c31212;
+}

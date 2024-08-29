@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventaire d'un magasin</title>
+</head>
+<body>
+    <h1>Inventaire du magasin</h1>
+
+    <!-- Boutons pour filtrer par catégorie -->
+    <button onclick="allProducts()">Tous les produits</button>
+    <button onclick="productsByCategory('Electronique')">Electronique</button>
+    <button onclick="productsByCategory('Vêtements')">Vêtements</button>
+
+    <!-- Zone pour afficher les produits -->
+    <div id="inventaire"></div>
+    <div id="result"></div>
+
+    <script src="js/inventaire.js"></script>
+</body>
+</html>
