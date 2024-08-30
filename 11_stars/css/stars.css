@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	background-color: #000;
+}
+.star {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 50%;
+}
