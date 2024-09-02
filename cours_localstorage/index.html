@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+    <link rel="stylesheet" href="css/storage.css">
+</head>
+<body>
+    <div id="greetings">
+        <p>Bonjour <strong></strong></p>
+    </div>
+
+    <p class="job"></p>
+
+    <!-- LOCALSTORAGE -->
+
+    <form id="formulaire">
+        <label for="job">Quel est ton métier ?</label>
+        <input type="text" id="job" placeholder="Métier">
+        <br>
+        <label for="age">Quel age as-tu?</label>
+        <input type="text" id="age" placeholder="Âge">
+        <br>
+        <button id="valid">Valider</button>
+        <button id="delete">Supprimer</button>
+    </form>
+
+    <!-- LOCALSTORAGE AVEC FETCH -->
+
+    <div id="jokes-results"></div>
+
+    <div id="div-btn">
+        <button id="jokes-btn">Best Jokes Ever</button>
+    </div>
+    <script src="js/storage.js"></script>
+</body>
+</html>

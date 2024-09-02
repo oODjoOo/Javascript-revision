@@ -1,0 +1,27 @@
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f0f0f0;
+	margin: 0;
+}
+
+#timer {
+	font-size: 3rem;
+	padding-bottom: 1rem;
+	width: 40%;
+	margin: auto;
+}
+
+.controls {
+	display: flex;
+	gap: 10px;
+}
+
+button {
+	font-size: 16px;
+	padding: 10px 20px;
+	cursor: pointer;
+}

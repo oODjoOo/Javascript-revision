@@ -1,0 +1,23 @@
+body {
+	/* display: flex; */
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	width: 50%;
+	height: 100vh;
+	font-family: fantasy;
+	margin: 0 auto;
+	background-color: #f0f0f0;
+}
+
+#done {
+	background-image: url(../img/done.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#countdown {
+	font-size: 2rem;
+	color: #333;
+}

@@ -1,0 +1,9 @@
+label,
+input {
+	display: inline-block;
+	width: 160px;
+}
+
+#greetings {
+	display: flex;
+}
