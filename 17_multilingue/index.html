@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site multilingue</title>
+    <link rel="stylesheet" href="css/multilingue.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Logo</div>
+            <div class="language-switch">
+                <button onclick="setLanguage('fr')">Français</button>
+                <button onclick="setLanguage('en')">English</button>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1 id="title">Bienvenue sur notre site</h1>
+            <p id="subtitle">Votre porte d'entrée vers une expérience incroyable</p>
+            <button id="cta-button">En savoir plus</button>
+        </div>
+    </header>
+    <main>
+        <section class="features">
+            <h2 id="features-title">Nos caractéristiques</h2>
+            <article class="feature-item">
+                <h3 id="feature1-title">Design moderne</h3>
+                <p id="feature1-desc">Profitez d'un design à la pointe de la technologie.</p>
+            </article>
+            <article class="feature-item">
+                <h3 id="feature2-title">Responsive</h3>
+                <p id="feature2-desc">Notre site s'adapte à tous vos appareils.</p>
+            </article>
+            <article class="feature-item">
+                <h3 id="feature3-title">Facile à utiliser</h3>
+                <p id="feature3-desc">Une interface intuitive pour une expérience agréable.</p>
+            </article>
+        </section>
+        <section class="about-us">
+            <h2 id="about-title">À propos de nous</h2>
+            <p id="about-desc">Nous sommes une équipe passionnée par la création de sites web performants et
+                esthétiques.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p id="footer-text">© 2024 - Tous droits réservés. Mentions légales</p>
+    </footer>
+    <script src="js/multilingue.js"></script>
+</body>
+</html>

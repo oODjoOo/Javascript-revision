@@ -69,7 +69,7 @@ function getIdentity() {
 
 valid.addEventListener("click", getIdentity);
 
-let userParse = localStorage.getItem("user");
+let userParse = JSON.parse(localStorage.getItem("user"));
 
 // JS OBJECT
 // let person = {
@@ -87,10 +87,42 @@ let userParse = localStorage.getItem("user");
 
 jobText.innerHTML = `Vous êtes ${userParse.job} et vous avez ${userParse.age} ans`;
 
-jobText.innerHTML = "";
+// jobText.innerHTML = "";
 
 deletBtn.addEventListener("click", function (e) {
 	e.preventDefault();
 	localStorage.removeItem("user");
 	jobText.innerHTML = "Les informations de l'utilisateur ont été supprimées !";
 });
+
+/******************************************* REQUÊTE FETCH ET LOCALSTORAGE  ********************************/
+/******************************************* REQUÊTE FETCH ET LOCALSTORAGE  ********************************/
+const results = document.querySelector("#jokes-results");
+const btn = document.querySelector("#jokes-btn");
+
+let url = "https://api.chucknorris.io/jokes/random";
+
+function letMeLaugh() {
+	fetch(url)
+		// Récupération de la réponse de l'api qu'on convertit en johnson (JSON)
+		.then((data) => data.json())
+		// Récupération de la réponse une fois convertie
+		.then((res) => {
+			console.log(res);
+			// Stockage de l'icône de l'api dans le localStorage
+			localStorage.setItem("avatar", res.icon_url);
+			results.innerHTML = `
+         <img src=${res.icon_url} alt="Avatar de Chuck" />
+         <p>${res.value}</p>
+         `;
+		});
+
+	// Récupération de l'icône dans le localStorage
+	let avatar = localStorage.getItem("avatar");
+
+	let greetings = (document.getElementById(
+		"greetings",
+	).innerHTML = `<img src=${avatar} alt="Avatar de Chuck" />`);
+}
+
+btn.addEventListener("click", letMeLaugh);
